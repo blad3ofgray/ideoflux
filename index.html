@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Sharing Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Idea Sharing Platform</h1>
+    </header>
+    
+    <main>
+        <section id="idea-submission">
+            <h2>Submit Your Idea</h2>
+            <form id="idea-form">
+                <input type="text" id="idea-input" placeholder="Your Idea" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="ideas-list">
+            <h2>Ideas</h2>
+            <ul id="ideas"></ul>
+        </section>
+
+        <section id="survey">
+            <h2>Survey</h2>
+            <form id="survey-form">
+                <label for="survey-question">What do you think about our platform?</label>
+                <select id="survey-question" required>
+                    <option value="">Select...</option>
+                    <option value="great">Great</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Idea Sharing Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
